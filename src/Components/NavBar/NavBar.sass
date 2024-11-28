@@ -1,0 +1,108 @@
+.navbar
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 20px 170px
+
+.nav-menu
+    display: flex
+    align-items: center
+    list-style: none
+    gap: 60px
+    font-size: 20px
+    li
+        display: flex
+        flex-direction: column
+        gap: 5px
+    button
+        background: none
+        border: none
+        cursor: pointer
+        font-size: 17px
+        font-weight: 600
+        color: #fff
+        transition: all 0.3s
+
+    button:hover
+        transform: scale(1.1)
+
+.nav-connect-anchor
+    text-decoration: none
+    color: #fff
+
+.nav-connect
+    padding: 20px 40px
+    border-radius: 50px
+    background: linear-gradient(45deg, #8986c4, #8186be, #5c6094, #3b3f6b, #2e3153)
+    font-size: 22px
+    cursor: pointer
+    transition: all 0.3s
+
+.nav-connect:hover
+    transform: scale(1.1)
+
+.underline
+    width: 100%
+    height: 2px
+    background: linear-gradient(45deg, #8986c4, #8186be, #5c6094, #3b3f6b, #2e3153)
+    margin-top: 5px
+
+.at-xmark-circle
+    display: none
+
+.at-menu-square
+    display: none
+
+@media screen and ( max-width: 1024px)
+    .navbar
+        margin: 20px 100px
+
+    .nav-menu
+        gap: 40px
+
+    .nav-connect
+        padding: 15px 30px
+        font-size: 20px
+    
+
+@media screen and (max-width: 768px)
+    .navbar
+        margin: 20px 30px
+
+    .nav-connect
+        display: none
+
+    .at-menu-square
+        display: block
+        position: fixed
+        top: 20px
+        right: 370px
+
+    .at-xmark-circle
+        display: block
+        position: relative
+        top: 20px
+        left: 220px
+        width: 30px
+
+    .nav-menu
+        flex-direction: column
+        align-items: start
+        position: fixed
+        top: 0
+        gap: 30px
+        background: linear-gradient(45deg, #8986c4, #8186be, #5c6094, #3b3f6b, #2e3153)
+        width: 350px
+        height: 100vh
+        z-index: 2
+        transform: translateX(20%)
+        right: -390px
+        transition: all 0.5s
+        li
+            flex-direction: row
+            gap: 20px
+            font-size: 20px
+            padding-left: 100px
+    
+
+    

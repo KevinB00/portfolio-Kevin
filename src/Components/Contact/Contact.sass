@@ -1,0 +1,122 @@
+.contact
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 80px
+    margin: 50px 300px
+
+.contactTitulo
+    text-align: center
+    position: relative
+    h1
+        padding: 0 40px
+        font-size: 50px
+        font-weight: 600
+
+.contactSection
+    display: flex
+    flex-direction: row
+    gap: 100px
+
+.contactLeft
+    display: flex
+    flex-direction: column
+    gap: 20px
+    p
+        max-width: 400px
+        font-size: 17px
+        line-height: 40px
+
+.contactDeatails
+    display: flex
+    flex-direction: column
+    gap: 30px
+
+.contactDetail
+    display: flex
+    align-items: center
+    gap: 20px
+
+.contactForm
+    display: flex
+    flex-direction: column
+    align-items: start
+    gap: 20px
+    label
+        font-size: 20px
+        font-weight: 600
+    input
+        width: 100%
+        padding: 10px
+        border-radius: 10px
+        border: none
+        font-size: 17px
+        background: #7e7479
+        color: #ffffff
+    textarea
+        width: 650px
+        padding: 10px
+        border-radius: 10px
+        border: none
+        font-size: 17px
+        background: #7e7479
+        resize: none
+        color: #ffffff
+    button
+        padding: 20px 40px
+        border-radius: 50px
+        background: linear-gradient(45deg, #8986c4, #8186be, #5c6094, #3b3f6b, #2e3153)
+        font-size: 22px
+        cursor: pointer
+        transition: all 0.3s
+        border: none
+        color: #fff
+
+    button:hover
+        transform: scale(1.1)
+
+@media screen and ( max-width: 1024px )
+    .contact
+        margin: 50px 100px
+
+    .contactSection
+        flex-direction: column
+        gap: 40px
+
+    .contactLeft
+        p
+            max-width: 100%
+
+    .contactDeatails
+        gap: 20px
+
+    .contactForm
+        width: 100% 
+        textarea
+            width: 100%
+    
+
+@media screen and ( max-width: 768px )
+    .contact
+        margin: 50px 30px
+
+    .contactTitulo
+        h1
+            font-size: 40px
+
+    .contactSection
+        flex-direction: column
+        gap: 40px
+
+    .contactLeft
+        p
+            max-width: 100%
+
+    .contactDeatails
+        gap: 20px
+
+    .contactForm
+        width: 100% 
+        textarea
+            width: 100%

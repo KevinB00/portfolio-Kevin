@@ -1,0 +1,158 @@
+.projects
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 80px
+    margin: 50px
+
+.projects-title
+    text-align: center
+    position: relative
+    h1
+        padding: 0 40px
+        font-size: 50px
+        font-weight: 600
+
+.projects-cards
+    display: grid
+    justify-content: center
+    grid-template-columns: repeat(2, 1fr)
+    gap: 50px
+    padding: 60px
+
+.projects-card
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 20px
+    padding: 30px
+    border-radius: 20px
+    background: linear-gradient(45deg, #6D6AAA, #B7A6AF, #8986c4, #8186be, #5c6094, #3b3f6b, #2e3153)
+    border: 2px solid #6D6AAA
+    p
+        text-align: justify
+        padding: 0 40px
+
+    .project-img
+        border-radius: 20px
+        width: 30%
+
+.informacion
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+.tecnologias
+    display: flex
+    align-items: center
+    flex-direction: row
+    gap: 20px
+    img
+        border-radius: 20px
+        width: 8%
+    .sqlite
+        width: 18%
+    .react
+        width: 12%
+    .php
+        width: 12%
+
+.link-github
+    img
+        border-radius: 20px
+        border: 5px solid #6D6AAA
+        width: 57%
+    .github
+        width: 105%
+
+        
+@media screen and ( max-width: 1024px )
+    .projects
+        margin: 40px
+
+    .projects-title
+        h1
+            font-size: 40px
+
+    .projects-cards
+        grid-template-columns: repeat(2, 1fr)
+        gap: 30px
+
+    .projects-card
+        gap: 15px
+        p
+            font-size: 17px
+        .project-img
+            width: 80%
+
+    .informacion
+        flex-direction: column
+        gap: 10px
+
+    .tecnologias
+        flex-direction: column
+        gap: 10px
+        img
+            width: 17%
+        .sqlite
+            width: 25%
+        .react
+            width: 19%
+        .php
+            width: 19%
+
+
+    .links
+        img
+            border: 2px solid #6D6AAA
+            width: 20%
+        .github
+            width: 20%
+    
+@media screen and ( max-width: 768px )
+    .projects
+        margin: 40px 30px
+        gap: 20px
+
+    .projects-title
+        h1
+            font-size: 40px
+
+    .projects-cards
+        grid-template-columns: 1fr 
+        gap: 20px
+        padding: 10px
+
+    .projects-card
+        gap: 20px
+        p
+            font-size: 17px
+        .project-img
+            width: 80%
+
+    .informacion
+        flex-direction: column
+        gap: 40px
+
+    .tecnologias
+        flex-direction: column
+        gap: 10px
+        img
+            width: 11%
+        .sqlite
+            width: 20%
+        .react
+            width: 14%
+        .php
+            width: 14%
+
+    .links
+        img
+            border: 2px solid #6D6AAA
+            width: 30%
+        .github
+            width: 30%
+            
+    
