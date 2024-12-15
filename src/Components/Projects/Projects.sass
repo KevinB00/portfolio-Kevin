@@ -20,6 +20,12 @@
     grid-template-columns: repeat(2, 1fr)
     gap: 50px
     padding: 60px
+    view-timeline-name: --projects
+    view-timeline-axis: block
+    animation-timeline: --projects
+    animation-name: show
+    animation-range: entry 25% cover 35%
+    animation-fill-mode: both
 
 .projects-card
     display: flex
@@ -67,6 +73,13 @@
     .github
         width: 105%
 
+@keyframes show
+    from
+        opacity: 0
+        scale: 0%
+    to
+        opacity: 1
+        scale: 100%
         
 @media screen and ( max-width: 1024px )
     .projects

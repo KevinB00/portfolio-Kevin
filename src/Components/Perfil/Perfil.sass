@@ -20,13 +20,37 @@
         font-size: 24px
         line-height: 40px
 
-    #profesion1
-        color: #6D6AAA
-        background-clip: text
+    .profesiones-container
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        gap: 50px
+        font-size: 80px
+        font-weight: 600
+        overflow: hidden
+        height: 90px
+        padding: 0 40px
 
-    #profesion2
-        color: #B7A6AF
-        background-clip: text
+        #profesion1
+            color: #6D6AAA
+            background-clip: text
+
+        .profesiones
+            text-align: left
+            list-style: none
+            margin-top: 0
+            -webkit-animation-name: change
+            -webkit-animation-duration: 13s
+            -webkit-animation-iteration-count: infinite
+            animation-name: change
+            animation-duration: 13s
+            animation-iteration-count: infinite
+
+        .profesion2
+            color: #B7A6AF
+            line-height: 120px
+            margin: 0
 
 .perfil-action
     display: flex
@@ -53,6 +77,44 @@
     text-decoration: none
     color: #fff
 
+@-webkit-keyframes change
+    0%, 12.66%, 100%
+        transform: translate3d(0, 0, 0)
+
+    16.66%, 29.32%
+        transform: translate3d(0, -140%, 0)
+
+    33.32%, 45.98%
+        transform: translate3d(0, -270%, 0)
+
+    49.98%, 62.64%
+        transform: translate3d(0, -400%, 0)
+
+    66.64%, 79.3%
+        transform: translate3d(0, -270%, 0)
+
+    83.3%, 95.96%
+        transform: translate3d(0, -140%, 0)
+
+@keyframes change
+    0%, 12.66%, 100%
+        transform: translate3d(0, 0, 0)
+
+    16.66%, 29.32%
+        transform: translate3d(0, -140%, 0)
+
+    33.32%, 45.98%
+        transform: translate3d(0, -270%, 0)
+
+    49.98%, 62.64%
+        transform: translate3d(0, -400%, 0)
+
+    66.64%, 79.3%
+        transform: translate3d(0, -270%, 0)
+
+    83.3%, 95.96%
+        transform: translate3d(0, -140%, 0)
+
 @media screen and ( max-width: 768px )
     .perfil
         img
@@ -60,15 +122,31 @@
             margin-top: 100px
 
         h1
-            font-size: 40px 
+            font-size: 25px
             width: 93%
             margin-top: 50px
+        
+        br
+            display: none
 
         p
             width: 90%
             font-size: 20px
             line-height: 30px
             margin-bottom: 20px
+
+        .profesiones-container
+            width: 87%
+            font-size: 25px
+            height: 50px
+            padding: 0
+            gap: 14px
+
+            .profesion2
+                
+                line-height: 50px
+                font-size: 25px
+                margin: 0
 
         .perfil-action
             font-size: 20px
@@ -80,4 +158,40 @@
         border-color: #899A8B
 
 
-    
+@-webkit-keyframes change
+    0%, 12.66%, 100%
+        transform: translate3d(0, 38%, 0)
+
+    16.66%, 29.32%
+        transform: translate3d(0, 13%, 0)
+
+    33.32%, 45.98%
+        transform: translate3d(0, -12%, 0)
+
+    49.98%, 62.64%
+        transform: translate3d(0, -37%, 0)
+
+    66.64%, 79.3%
+        transform: translate3d(0, -12%, 0)
+
+    83.3%, 95.96%
+        transform: translate3d(0, 13%, 0)
+
+@keyframes change
+    0%, 12.66%, 100%
+        transform: translate3d(0, 38%, 0)
+
+    16.66%, 29.32%
+        transform: translate3d(0, 13%, 0)
+
+    33.32%, 45.98%
+        transform: translate3d(0, -12%, 0)
+
+    49.98%, 62.64%
+        transform: translate3d(0, -37%, 0)
+
+    66.64%, 79.3%
+        transform: translate3d(0, -12%, 0)
+
+    83.3%, 95.96%
+        transform: translate3d(0, 13%, 0)
