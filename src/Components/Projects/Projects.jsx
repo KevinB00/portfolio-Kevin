@@ -4,7 +4,7 @@ import img_mascotas from "../../assets/menumascota.jpg";
 import img_nutri from "../../assets/nutridelivery.jpg";
 import kotlin from "../../assets/kotlin.jpg";
 import android from "../../assets/android.jpg";
-import sqlite from "../../assets/sqlite.jpeg";
+import sqlite from "../../assets/Sqlite.jpeg";
 import github from "../../assets/github.jpg";
 import react from "../../assets/react.jpg";
 import bootstrap from "../../assets/bootstrap.jpg";
