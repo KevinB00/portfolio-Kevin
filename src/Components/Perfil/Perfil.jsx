@@ -1,7 +1,8 @@
 import React from "react";
 import "./Perfil.sass";
 import profile_img from "../../assets/profile_img.jpg";
-import cv from "../../assets/CV_KevinRodrigo.pdf";
+import { Linkedin } from "@vectopus/atlas-icons-react";
+import github from "../../assets/github.png";
 
 const Perfil = () => {
   return (
@@ -24,14 +25,21 @@ const Perfil = () => {
         superiores me dedico a la programación.
       </p>
       <div className="perfil-action">
-        <div className="perfil-cv">
+        <a
+          href="https://www.linkedin.com/in/kevin-buena%C3%B1o-evans-038159262"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="linkedin-link"
+        >
+          <Linkedin className="perfil-linkedin" />
+        </a>
+        <div className="github-link">
           <a
-            href={cv}
+            href="https://github.com/KevinB00"
             target="_blank"
             rel="noopener noreferrer"
-            className="cv-link"
           >
-            Descargar CV
+            <img src={github} alt="Github" className="perfil-github" />
           </a>
         </div>
       </div>

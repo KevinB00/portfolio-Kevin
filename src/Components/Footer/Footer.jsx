@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.sass";
-import cv from '../../assets/CV_KevinRodrigo.pdf'
 
 function Footer() {
   return (
@@ -11,7 +10,7 @@ function Footer() {
           <p>Kevin Buenaño Evans 2024</p>
         </div>
         <div className="right">
-          <p className="cv"><a href={cv} target="_blank" rel="noopener noreferrer" className="cv-link">Descargar CV</a></p>
+          <p className="linkedin"><a href='https://www.linkedin.com/in/kevin-buena%C3%B1o-evans-038159262' target="_blank" rel="noopener noreferrer" className="linkedin-link">Linkedin</a></p>
         </div>
       </div>
     </div>

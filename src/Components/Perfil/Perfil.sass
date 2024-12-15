@@ -55,25 +55,38 @@
 .perfil-action
     display: flex
     align-items: center
-    gap: 20px
+    gap: 80px
     font-size: 24px
     font-weight: 400
     margin-bottom: 50px
 
-.perfil-cv
-    padding: 20px 40px
-    border-radius: 50px
-    border: 3px solid #fff
+.perfil-linkedin
+    width: 80px
+    height: 80px
     cursor: pointer
     box-shadow: inset 0 0 0 0 #899A8B
     -webkit-transition: ease-out 0.4s
     -moz-transition: ease-out 0.4s
     transition: ease-out 0.4s
 
-.perfil-cv:hover
+.github-link
+    text-decoration: none
+    color: #fff
+    cursor: pointer
+    margin: 0
+    border-radius: 50px
+        
+    img
+        width: 90px
+        margin: 0
+
+.perfil-github:hover
     box-shadow: inset 400px 50px 0 0 #899A8B
 
-.cv-link
+.perfil-linkedin:hover
+    box-shadow: inset 400px 50px 0 0 #899A8B
+
+.linkedin-link
     text-decoration: none
     color: #fff
 
@@ -114,6 +127,7 @@
 
     83.3%, 95.96%
         transform: translate3d(0, -140%, 0)
+        
 
 @media screen and ( max-width: 768px )
     .perfil
@@ -149,13 +163,20 @@
                 margin: 0
 
         .perfil-action
+            gap: 40px
             font-size: 20px
             margin-bottom: 30px
             padding: 20px
 
-    .perfil-cv
+    .perfil-linkedin
         padding: 15px 30px
         border-color: #899A8B
+        width: 60px
+
+    .github-link
+        img
+            width: 70px
+            margin: 0
 
 
 @-webkit-keyframes change
