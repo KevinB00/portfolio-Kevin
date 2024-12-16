@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babel/runtime": "^7.26.0",
     "@vectopus/atlas-icons-react": "^0.0.10",
     "react": "^18.3.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
