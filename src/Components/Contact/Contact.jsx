@@ -45,11 +45,11 @@ function Contact() {
         </div>
         <form onSubmit={onSubmit} className="contactForm">
           <label htmlFor="">Nombre</label>
-          <input type="text" placeholder="Nombre" />
+          <input type="text" name="name" placeholder="Nombre" required />
           <label htmlFor="">Correo</label>
-          <input type="email" placeholder="Correo" />
+          <input type="email" name="email" placeholder="Correo" required />
           <label htmlFor="">Mensaje</label>
-          <textarea name="mensaje" rows="10" placeholder="Escribe tu mensaje"></textarea>
+          <textarea name="message" rows="10" placeholder="Escribe tu mensaje" required></textarea>
           <button type="submit" className="contactButton">Enviar</button>
         </form>
       </div>
