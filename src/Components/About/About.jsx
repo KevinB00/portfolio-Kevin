@@ -65,6 +65,7 @@ const About = () => {
           </div>
 
         </div>
+        <img onClick={ () => window.open("https://www.codewars.com/users/KevinB00", "_blank")} className="codewars" src="https://www.codewars.com/users/KevinB00/badges/large" alt="codewars level" />
       </div>
     </div>
   );
